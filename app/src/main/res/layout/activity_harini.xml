@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/hariniDetailImage"
+        android:layout_width="191dp"
+        android:layout_height="188dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle"
+        android:scaleType="centerCrop"
+        android:src="@drawable/harini"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/hariniDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="HARINI"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/hariniDetails"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Hello, I’m Harini!
+
+I’m an artist who believes that every brushstroke tells a story, and every color holds a feeling. Through my art, I explore the endless possibilities of imagination, translating emotions, experiences, and visions into vibrant creations. Whether it's painting, sketching, or digital art, I’m always seeking new ways to express myself and capture the beauty of the world around me. My work is a reflection of my journey, a mix of bold ideas and subtle details. This space is where I share my art, inspiration, and the process behind every piece. Let’s create together!"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

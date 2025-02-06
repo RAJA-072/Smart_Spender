@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeamMembersActivity">
+
+    <!-- Button to show Popup Menu -->
+    <Button
+        android:id="@+id/popupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Popup Menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Raji's Section -->
+    <LinearLayout
+        android:id="@+id/rajiSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/popupButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/rajiImage"
+            android:layout_width="170dp"
+            android:layout_height="173dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/circle"
+            android:scaleType="centerCrop"
+            android:src="@drawable/raji" />
+
+        <TextView
+            android:id="@+id/rajiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RAJI"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+        <!-- View Details Button for Raji -->
+        <Button
+            android:id="@+id/viewDetailsRaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Nivasshini's Section -->
+    <LinearLayout
+        android:id="@+id/nivasshiniSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/rajiSection"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/nivasshiniImage"
+            android:layout_width="169dp"
+            android:layout_height="157dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/circle"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nivasshini" />
+
+        <TextView
+            android:id="@+id/nivasshiniName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIVASSHINI"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+        <!-- View Details Button for Nivasshini -->
+        <Button
+            android:id="@+id/viewDetailsNivasshini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Harini's Section -->
+    <LinearLayout
+        android:id="@+id/hariniSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/nivasshiniSection"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/hariniImage"
+            android:layout_width="169dp"
+            android:layout_height="162dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/circle"
+            android:scaleType="centerCrop"
+            android:src="@drawable/harini" />
+
+        <TextView
+            android:id="@+id/hariniName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HARINI"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+        <!-- View Details Button for Harini -->
+        <Button
+            android:id="@+id/viewDetailsHarini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

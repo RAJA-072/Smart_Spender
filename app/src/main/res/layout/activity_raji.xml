@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/rajiDetailImage"
+        android:layout_width="209dp"
+        android:layout_height="205dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle"
+        android:scaleType="centerCrop"
+        android:src="@drawable/raji"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/rajiDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="RAJI"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/rajiDetails"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Hello, I'm Raji, a passionate and dedicated individual with a strong interest in technology and development. I enjoy working on various projects, ranging from web and mobile applications to data-driven solutions. With a keen eye for detail, I strive to create innovative and efficient solutions that make a difference. My work is guided by a commitment to learning and continuous improvement, and I'm always eager to take on new challenges and expand my skills."
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
