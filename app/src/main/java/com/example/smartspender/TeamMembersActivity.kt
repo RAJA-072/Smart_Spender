@@ -3,7 +3,6 @@ package com.example.smartspender
 import android.content.Intent
 import android.os.Bundle
 import android.view.ContextMenu
-import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -67,27 +66,7 @@ class TeamMembersActivity : AppCompatActivity() {
         }
     }
 
-    // Handle context menu item selections
-    override fun onContextItemSelected(item: MenuItem): Boolean {
-        val memberName = when (item.itemId) {
-            R.id.view_details -> item.menuInfo?.let {
-                when ((it as? View)?.tag) {
-                    "Raji" -> "Raji"
-                    "Nivasshini" -> "Nivasshini"
-                    "Harini" -> "Harini"
-                    else -> null
-                }
-            }
-            else -> null
-        }
 
-        memberName?.let {
-            val intent = Intent(this, MemberDetailActivity::class.java)
-            intent.putExtra("member_name", it)
-            startActivity(intent)
-            return true
-        }
 
-        return super.onContextItemSelected(item)
-    }
+
 }
